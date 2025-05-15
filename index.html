@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikolay Potapenko - Frontend Developer Resume</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <h1>Nikolay Potapenko</h1>
+            <p class="subtitle">Frontend Developer</p>
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> <a href="tel:+77002335142">+77002335142</a></span> |
+                <span><i class="fas fa-envelope"></i> <a href="mailto:thehittrick@gmail.com">thehittrick@gmail.com</a></span> |
+                <span><i class="fab fa-github"></i> <a href="https://github.com/Nickolay1986/online-store" target="_blank">GitHub</a></span>
+            </div>
+            <div class="languages-header">
+                <i class="fas fa-language"></i> Languages: Russian (Native), English (Basic - for technical documentation)
+            </div>
+        </header>
+
+        <section class="summary">
+            <h2><i class="fas fa-user-tie icon"></i> Summary</h2>
+            <p>
+                A dedicated Frontend Developer with <strong>1.5-2 years of focused self-study in JavaScript and related technologies</strong>, 
+                culminating in hands-on experience building full-stack web applications using the PERN stack (PostgreSQL, Express.js, 
+                React, Node.js).  Involved in the React ecosystem, including state management with MobX and API interaction via
+                 Axios with JWT authentication and role-based authorization. Possessing demonstrated ability to independently develop and 
+                 integrate complex modules, such as an advanced Excel data import feature with client-side parsing, batch processing,
+                  and detailed user feedback. Holds higher education degree in "Informatics and Computer Engineering" and is eager to apply 
+                  and expand skills to create efficient, high-performing, and modern web solutions.
+            </p>
+        </section>
+
+        <section class="skills">
+            <h2><i class="fas fa-cogs icon"></i> Key Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>JavaScript (ES6+), HTML5, CSS3</li>
+                        <li>React, React Router DOM</li>
+                        <li>State Management: MobX, React Context API</li>
+                        <li>HTTP Clients: Axios (instances, JWT interceptors)</li>
+                        <li>File Handling (Client): `xlsx` library, FileReader API</li>
+                        <li>UI Libraries: React-Bootstrap</li>
+                        <li>Async Operations: Promises, async/await, batch processing, cancellation</li>
+                        <li>Adaptive & Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js, Express.js</li>
+                        <li>Database: PostgreSQL</li>
+                        <li>ORM: Sequelize</li>
+                        <li>RESTful API Design & Development</li>
+                        <li>Express Middleware (CORS, JWT Auth/AuthZ, etc.)</li>
+                        <li>Authentication/Authorization: JWT (Server & Client)</li>
+                        <li>File Handling (Server): `express-fileupload`, static serving</li>
+                        <li>Configuration: `dotenv`</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>General Tools & Practices</h3>
+                    <ul>
+                        <li>Version Control: Git, GitHub</li>
+                        <li>Client-Server Architecture</li>
+                        <li>MVVM-like client architecture (MobX)</li>
+                        <li>Browser DevTools</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2><i class="fas fa-briefcase icon"></i> Experience</h2>
+            <div class="job">
+                <h3>Full-Stack E-commerce Store Development (PERN Stack)</h3>
+                <p class="company-role">Personal Project (Independent Development and Enhancement)</p>
+                <p class="date">Approx. 3 months in 2024</p>
+                <p class="github-link"><strong>GitHub:</strong> 
+                    <a href="https://github.com/Nickolay1986/online-store" target="_blank">github.com/Nickolay1986/online-store</a>
+                </p>
+                
+                <p>Independently developed and structured a full-featured e-commerce application using the PERN stack,
+                     with separation into client-side (React) and server-side (Node.js/Express) parts.</p>
+                
+                <h4>Frontend (React):</h4>
+                <ul>
+                    <li>Developed UI using React and React-Bootstrap.</li>
+                    <li>Implemented state management with MobX (`DeviceStore.js`).</li>
+                    <li>Configured API interaction via Axios with JWT authentication.</li>
+                    <li>Implemented routing using React Router DOM.</li>
+                    <li><strong>Independently developed and integrated a complex module for importing products from Excel files (`UpdateAndCreateFromXLSX.js`):</strong>
+                        <ul>
+                            <li>UI with React-Bootstrap (modal, file selector, progress bar, preview table, message log).</li>
+                            <li>Client-side Excel parsing (`.xlsx`, `.xls`, `.csv`) using `xlsx` and `FileReader API`.</li>
+                            <li>Data preview with status indication (new, update, exists).</li>
+                            <li>Automatic creation of new types/brands on server.</li>
+                            <li>Update or creation of products based on file data.</li>
+                            <li>Batch processing for large data imports.</li>
+                            <li>Asynchronous processing with progress display and detailed logging.</li>
+                            <li>User-initiated cancellation of import process.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Independently developed a full-featured shopping cart page (`Basket.js`) from scratch,</strong> including dynamic updates, quantity changes (with stock checking), item removal, and total cost calculation.</li>
+                </ul>
+
+                <h4>Backend (Node.js, Express.js, PostgreSQL):</h4>
+                <ul>
+                    <li>Designed and implemented a RESTful API using Express.js.</li>
+                    <li>Configured PostgreSQL connection and interaction via Sequelize ORM.</li>
+                    <li>Implemented JWT authentication and role-based authorization (`authMiddleware.js`, `checkRole.js`).</li>
+                    <li>Integrated file uploads (`express-fileupload`) and static file serving.</li>
+                </ul>
+
+                <h4>Technologies Used:</h4>
+                <p>
+                    <strong>Frontend:</strong> React, MobX, React Router DOM, Axios, `xlsx`, JavaScript (ES6+), HTML5, CSS3, React-Bootstrap, Create React App (Webpack).<br>
+                    <strong>Backend:</strong> Node.js, Express.js, Sequelize, PostgreSQL, JWT, `dotenv`, `cors`, `express-fileupload`.<br>
+                    <strong>General:</strong> Git, GitHub.
+                </p>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2><i class="fas fa-graduation-cap icon"></i> Education</h2>
+            <div class="edu-item">
+                <h3>Modern University for the Humanities</h3>
+                <p>Faculty: Informatics and Computer Engineering</p>
+                <p>Degree: Bachelor</p>
+            </div>
+        </section>
+        <footer>
+            <p>© <span id="currentYear"></span> Nikolay Potapenko. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
